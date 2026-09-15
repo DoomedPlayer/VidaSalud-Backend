@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  rabbitmq-node1:
+    image: rabbitmq:3-management
+    container_name: rabbitmq-node1
+    hostname: rabbitmq-node1
+    environment:
+      RABBITMQ_ERLANG_COOKIE: "vidasalud_cluster_cookie"
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: admin_password
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - rmq_node1_data:/var/lib/rabbitmq
+
+  rabbitmq-node2:
+    image: rabbitmq:3-management
+    container_name: rabbitmq-node2
+    hostname: rabbitmq-node2
+    environment:
+      RABBITMQ_ERLANG_COOKIE: "vidasalud_cluster_cookie"
+    ports:
+      - "5673:5672" 
+      - "15673:15672"
+    volumes:
+      - rmq_node2_data:/var/lib/rabbitmq
+    command: bash -c "rabbitmq-server -detached && sleep 10 && rabbitmqctl stop_app && rabbitmqctl join_cluster rabbit@rabbitmq-node1 && rabbitmqctl start_app && tail -f /dev/null"
+    depends_on:
+      - rabbitmq-node1
+
+volumes:
+  rmq_node1_data:
+  rmq_node2_data:
