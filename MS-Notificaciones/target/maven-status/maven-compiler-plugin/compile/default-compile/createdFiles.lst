@@ -1,0 +1,3 @@
+com\BinarySeint\vsNotificaciones\config\RabbitMQConfig.class
+com\BinarySeint\vsNotificaciones\VsNotificacionesApplication.class
+com\BinarySeint\vsNotificaciones\components\NotificationConsumer.class

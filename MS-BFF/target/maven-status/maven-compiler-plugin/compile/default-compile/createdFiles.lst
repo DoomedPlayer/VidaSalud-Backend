@@ -1,0 +1,7 @@
+com\BinarySeint\vsBFF\controller\BffController.class
+com\BinarySeint\vsBFF\security\SecurityConfig.class
+com\BinarySeint\vsBFF\VsBffApplication.class
+com\BinarySeint\vsBFF\service\AuditClient.class
+com\BinarySeint\vsBFF\service\CatalogClient.class
+com\BinarySeint\vsBFF\service\CitasClient.class
+com\BinarySeint\vsBFF\service\ReportClient.class

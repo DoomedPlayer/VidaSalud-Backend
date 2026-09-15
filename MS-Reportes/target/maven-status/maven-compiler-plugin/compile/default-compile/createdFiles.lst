@@ -1,0 +1,6 @@
+com\BinarySeint\vsReportes\classes\KpiAtenciones.class
+com\BinarySeint\vsReportes\controller\ReportController.class
+com\BinarySeint\vsReportes\VsReportesApplication.class
+com\BinarySeint\vsReportes\DTO\AtencionEventDto.class
+com\BinarySeint\vsReportes\service\ReportKafkaConsumer.class
+com\BinarySeint\vsReportes\repository\KpiAtencionesRepository.class

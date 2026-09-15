@@ -1,0 +1,9 @@
+com\BinarySeint\vsCatalog\repository\CupoRepository.class
+com\BinarySeint\vsCatalog\repository\BoxRepository.class
+com\BinarySeint\vsCatalog\repository\PrestacionRepository.class
+com\BinarySeint\vsCatalog\service\CatalogService.class
+com\BinarySeint\vsCatalog\VsCatalogApplication.class
+com\BinarySeint\vsCatalog\classes\Box.class
+com\BinarySeint\vsCatalog\classes\Cupo.class
+com\BinarySeint\vsCatalog\classes\Prestacion.class
+com\BinarySeint\vsCatalog\controller\CatalogController.class
